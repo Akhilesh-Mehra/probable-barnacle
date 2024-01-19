@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggles</title>
+    <link rel="stylesheet" href="aki.css">
+    <script>
+        // This function toggles the visibility of the paragraph element
+        function clicktog() {
+            var tog = document.getElementById("toggle");
+            var inC = document.getElementById("inC");
+            if (tog.style.backgroundColor == "gray" ) {
+                tog.style.backgroundColor = "cyan";
+            } else {
+                tog.style.backgroundColor = "gray";
+            }
+            if (inC.style.float == "left" ) {
+                inC.style.float = "right";
+            } else {
+                inC.style.float = "left";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div id="toggle" onclick="clicktog()">
+     <span id="inC"></span>
+    </div>
+
+<script src="tog.js"></script>
+</body>
+</html>
